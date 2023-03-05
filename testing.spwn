@@ -1,0 +1,15 @@
+array = [1, 2, 3]
+contains_duplicate = (list) {
+	let values = []
+	for i in list {
+		if i in values {
+			return true
+		}
+		else {
+			$.append(values, i)
+		}
+	}
+	return false
+}
+
+$.print(contains_duplicate(array))
