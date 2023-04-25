@@ -13,3 +13,5 @@ while True:
   ):
     possibilities += 1
     print(possibilities)
+
+# ans: 94
