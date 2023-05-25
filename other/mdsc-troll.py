@@ -33,7 +33,7 @@ while True:
         print('yayyyyy')
         print('spammed:', iteration)
         continue
-
-    print('nayyyyy')
-    print(response.status_code)
-    raise Exception("you goofed")
+    else:
+        print('nayyyyy')
+        print(response.status_code)
+        raise Exception("you goofed")
