@@ -32,7 +32,6 @@ while True:
     if response.status_code == 200:
         print('yayyyyy')
         print('spammed:', iteration)
-        continue
     else:
         print('nayyyyy')
         print(response.status_code)
