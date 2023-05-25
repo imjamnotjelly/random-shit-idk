@@ -9,7 +9,7 @@ while True:
     print(num)
     break
 
-# bad version (recursive)
+# inefficient version (recursive)
 import sys
 
 sys.setrecursionlimit(5000)
