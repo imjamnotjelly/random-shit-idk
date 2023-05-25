@@ -7,8 +7,8 @@ possibilities = 0
 while True:
   num += 1
   factored_num = factor(num)
-  if (
-    len(factored_num) == 4 and
+  if all(
+    len(factored_num) == 4,
     len([i for i in factored_num if i < 50]) == 3
   ):
     possibilities += 1
