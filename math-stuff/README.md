@@ -1,3 +1,3 @@
 ## math-stuff
 
-algorithms and other things i made for my geometry teacher and my school's monthly math challenges
+algorithms and short scripts i made for my geometry teacher and my school's monthly math challenges
