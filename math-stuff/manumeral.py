@@ -1,3 +1,5 @@
+# fuck this shit it no workey ;(
+
 def manumeral(num):
     def digit_diff(x=2, y=1):
         return sum([int(d) for d in str(num*x)]) - sum([int(d) for d in str(num*y)])
