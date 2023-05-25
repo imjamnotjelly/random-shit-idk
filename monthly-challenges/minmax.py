@@ -1,3 +1,5 @@
+# purely mathmatical two number min/max algo
+
 from math import sqrt
 
 def minimum(x, y):
