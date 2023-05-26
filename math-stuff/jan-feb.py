@@ -19,8 +19,7 @@ def ans(num=1):
   for i in range(2, 11):
     if num % i != i - 1:
       return ans(num + 1)
-  else:
-    return num
+  return num
 
 
 print(ans())
