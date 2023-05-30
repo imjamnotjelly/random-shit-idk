@@ -1,6 +1,7 @@
 # recursive min/max func generator (very lag!!!)
 
 from math import sqrt
+from random import uniform
 
 def minimum(*nums):
     if len(nums) > 2:
@@ -19,7 +20,10 @@ def maximum(*nums):
     return f"({x}+{y}+sqrt(({x}-{y})**2))/2" # yeah yeah im aware that theres no abstraction
 
 nrange = lambda x:tuple(range(1, x+1))
-test = nrange(5)
+rrange = lambda mn, mx, amt:tuple(uniform(mn, mx) for _ in range(amt))
+
+test = rrange(1, 10, 5)
+print(test)
 
 min_func = minimum(*test)
 max_func = maximum(*test)
