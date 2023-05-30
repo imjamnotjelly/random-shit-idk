@@ -19,7 +19,7 @@ def maximum(*nums):
     return f"({x}+{y}+sqrt(({x}-{y})**2))/2" # yeah yeah im aware that theres no abstraction
 
 nrange = lambda x:tuple(range(1, x+1))
-test = nrange(20)
+test = nrange(5)
 
 min_func = minimum(*test)
 max_func = maximum(*test)
