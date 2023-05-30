@@ -12,7 +12,7 @@ def minimum(*nums):
 
 def maximum(*nums):
     if len(nums) > 2:
-        x = minimum(*nums[:-1])
+        x = maximum(*nums[:-1])
         y = nums[-1]
     else:
         x, y = nums
