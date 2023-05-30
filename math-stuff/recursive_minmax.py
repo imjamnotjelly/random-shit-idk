@@ -16,7 +16,7 @@ def maximum(*nums):
         y = nums[-1]
     else:
         x, y = nums
-    return f"({x}+{y}+sqrt(({x}-{y})**2))/2"
+    return f"({x}+{y}+sqrt(({x}-{y})**2))/2" # yeah yeah im aware that theres no abstraction
 
 nrange = lambda x:tuple(range(1, x+1))
 test = nrange(20)
