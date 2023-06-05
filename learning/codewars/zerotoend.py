@@ -1,5 +1,4 @@
 def move_zeros(lst):
-    nlist = [i for i in lst if i != 0]
-    for i in range(lst.count(0)):
-        nlist.append(0)
+    nlist = [i for i in lst if i != 0]
+    nlist.extend([0]*lst.count(0))
     return nlist
