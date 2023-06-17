@@ -1,11 +1,11 @@
 from math import sqrt
 from random import uniform
 from random import sample
-# recursive min/max (very lag!!)
+# recursive min/max func generator (very lag!!)
 
 """
 def minimum(*nums):
-    if len(nums) > 2:
+    if len(nums) > 2:   
         x = minimum(*nums[:-1])
         y = nums[-1]
     else:
@@ -21,7 +21,7 @@ def maximum(*nums):
     return f"({x}+{y}+sqrt(({x}-{y})**2))/2" # yeah yeah im aware that theres no abstraction
 """
 
-# iterative min/max
+# iterative gen
 def minimum(*nums):
     x = nums[0]
     for y in nums[1:]:
@@ -34,7 +34,7 @@ def maximum(*nums):
         x = f"({x}+{y}+sqrt(({x}-{y})**2))/2"
     return x
 
-nrange = lambda x:sample(list(range(1, x+1)), x)
+nrange = lambda x:sample(tuple(range(1, x+1)), x)
 rrange = lambda mn, mx, amt:tuple(uniform(mn, mx) for _ in range(amt))
 
 test = rrange(1, 100, 10)
