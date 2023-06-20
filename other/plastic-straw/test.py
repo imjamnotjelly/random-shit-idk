@@ -29,11 +29,10 @@ def rect(width, height, radius=0):
         l_index = index_cdn(radius, str.isalpha)
         radius = eval(insert(radius, l_index, "*"))
     radius = min(radius, min(dim)/2)
-    pendown()
     for turn in range(4):
         fd(dim[turn%2]-radius*2)
         circle(radius, 90)
-    penup()
-
+pu()
 rect(300, 100, "1/8 min(dim)")
+pd()
 done()
