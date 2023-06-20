@@ -32,7 +32,7 @@ def rect(width, height, radius=0):
     for turn in range(4):
         fd(dim[turn%2]-radius*2)
         circle(radius, 90)
-pu()
-rect(300, 100, "1/8 min(dim)")
 pd()
+rect(300, 100, "1/8 min(dim)")
+pu()
 done()
